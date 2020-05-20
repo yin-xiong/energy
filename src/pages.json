@@ -1,0 +1,16 @@
+{
+	"pages": [
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "研能量"
+			}
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "white",
+		"navigationBarTitleText": "研能量",
+		"navigationBarBackgroundColor": "#000",
+		"backgroundColor": "#fff"
+	}
+}
