@@ -5,12 +5,43 @@
 			"style": {
 				"navigationBarTitleText": "研能量"
 			}
+		},
+		{
+			"path": "pages/user/index",
+			"style": {
+				"navigationBarTitleText": "我的"
+			}
+		},
+		{
+			"path": "pages/admin/index",
+			"style": {
+				"navigationBarTitleText": "管理员入口"
+			}
 		}
 	],
 	"globalStyle": {
 		"navigationBarTextStyle": "white",
 		"navigationBarTitleText": "研能量",
-		"navigationBarBackgroundColor": "#000",
-		"backgroundColor": "#fff"
+		"navigationBarBackgroundColor": "#000"
+	},
+	"tabBar": {
+		"color": "#262626",
+		"selectedColor": "#4FAEF0",
+		"borderStyle": "black",
+		"backgroundColor": "#ffffff",
+		"list": [
+			{
+				"pagePath": "pages/index/index",
+				"text": "研究生自荐"
+			},
+			{
+				"pagePath": "pages/user/index",
+				"text": "我 的"
+			},
+			{
+				"pagePath": "pages/admin/index",
+				"text": "管理员入口"
+			}
+		]
 	}
 }

@@ -56,10 +56,47 @@
                 <button class="cu-btn">开始测试</button>
             </view>
         </view>
-        <view>
-            <view>考研工具箱</view>
-            <view>
-
+        <view class="tools">
+            <view class="tools-title">考研工具箱</view>
+            <view class="tools-list flex">
+                <navigator hover-class="none" url="/pages/index/index">
+                    <view><img src="../../static/image/icon/tool.png" alt=""></view>
+                    <text>专业课资料</text>
+                </navigator>
+                <navigator hover-class="none" url="/pages/index/index">
+                    <view><img src="../../static/image/icon/tool.png" alt=""></view>
+                    <text>公共课真题</text>
+                </navigator>
+                <navigator hover-class="none" url="/pages/index/index">
+                    <view><img src="../../static/image/icon/tool.png" alt=""></view>
+                    <text>全程复习规划</text>
+                </navigator>
+                <navigator hover-class="none" url="/pages/index/index">
+                    <view><img src="../../static/image/icon/tool.png" alt=""></view>
+                    <text>专业库</text>
+                </navigator>
+                <navigator hover-class="none" url="/pages/index/index">
+                    <view><img src="../../static/image/icon/tool.png" alt=""></view>
+                    <text>历年分数线</text>
+                </navigator>
+                <navigator hover-class="none" url="/pages/index/index">
+                    <view><img src="../../static/image/icon/tool.png" alt=""></view>
+                    <text>考研常识包</text>
+                </navigator>
+            </view>
+        </view>
+        <view class="tools learning">
+            <view class="tools-title">学习充电站</view>
+            <view class="tools-list flex">
+                <navigator hover-class="none" url="/pages/index/index">
+                    <view><img src="../../static/image/icon/t1.png" alt=""></view>
+                </navigator>
+                <navigator hover-class="none" url="/pages/index/index">
+                    <view><img src="../../static/image/icon/t1.png" alt=""></view>
+                </navigator>
+                <navigator hover-class="none" url="/pages/index/index">
+                    <view><img src="../../static/image/icon/t1.png" alt=""></view>
+                </navigator>
             </view>
         </view>
     </view>
@@ -113,8 +150,9 @@
     };
 </script>
 
-<style lang="scss" type="text/scss">
+<style lang="scss" type="text/scss" scoped>
     .content {
+        padding-bottom: 50upx;
         .uni-padding-wrap {
             width: 100%;
             height: 350upx;
@@ -183,7 +221,7 @@
             font-size: 50upx;
             img{
                 width: 80%;
-                height: 120upx;
+                height: 140upx;
                 position: absolute;
                 left: 0;
                 right: 0;
@@ -193,9 +231,8 @@
                 z-index: 1;
             }
             text{
-                display: block;
-                width: 100%;
-                height: 100%;
+                position: relative;
+                z-index: 9;
             }
             &:after{
                 content: '';
@@ -231,6 +268,85 @@
                 padding: 0 40upx;
                 font-size: 28upx;
                 font-weight: bold;
+            }
+        }
+        .tools{
+            .tools-title{
+                height: 70upx;
+                line-height: 70upx;
+                box-sizing: border-box;
+                border: 2px solid #444;
+                text-align: center;
+                margin: 30upx;
+                font-size: 30upx;
+                font-weight: bold;
+                border-radius: 14upx;
+                box-shadow:0px 0px 20px #1565fc inset,0px 0px 20px #1565fc;
+            }
+            .tools-list{
+                position: relative;
+                padding-bottom: 40upx;
+                overflow: hidden;
+                box-sizing: border-box;
+                justify-content: space-between;
+                align-content: center;
+                flex-wrap: wrap;
+                text-align: center;
+                background-color: #b7d0f6;
+                &:after{
+                    content: '';
+                    position: absolute;
+                    left: 0;
+                    right: 0;
+                    top: 0;
+                    bottom: 0;
+                    margin: auto;
+                    width: 100%;
+                    height: 200%;
+                    background-color: #fff;
+                    border-radius: 50%;
+                    box-shadow:0px 0px 60upx #b7d0f6 inset,0px 0px 60upx #b7d0f6;
+                }
+                navigator{
+                    position: relative;
+                    z-index: 9;
+                    width: 30%;
+                    margin-top: 40upx;
+                    background-color: transparent;
+                    view{
+                        background-color: transparent;
+                        img{
+                            width: 60upx;
+                            height: 80upx;
+                            margin-bottom: 20upx;
+                        }
+                        text{
+                            font-weight: bold;
+                            font-size: 28upx;
+                        }
+                    }
+
+                }
+            }
+            &.learning{
+                box-sizing: border-box;
+                padding: 0 30upx;
+                .tools-title{
+                    box-shadow:0px 0px 20px #a7eecc inset,0px 0px 20px #a7eecc;
+                }
+                .tools-list{
+                    background-color: #fff;
+                    &:after{
+                        display: none;
+                    }
+                    view{
+                        width: 100%;
+                        img{
+                            width: 100%;
+                            height: 200upx;
+                        }
+                    }
+                }
             }
         }
     }
