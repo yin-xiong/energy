@@ -4,15 +4,15 @@
             <view class="page-section swiper">
                 <view class="page-section-spacing">
                     <swiper
-                            class="swiper"
-                            :indicator-dots="indicatorDots"
                             :autoplay="autoplay"
-                            :interval="interval"
-                            :duration="duration"
                             :circular="circular"
+                            :duration="duration"
+                            :indicator-dots="indicatorDots"
+                            :interval="interval"
+                            class="swiper"
                     >
-                        <swiper-item v-for="(item,index) in swiperList" :key="item.id">
-                            <view class="swiper-item"><img mode="aspectFill" :src="item.url" alt=""></view>
+                        <swiper-item :key="item.id" v-for="(item,index) in swiperList">
+                            <view class="swiper-item"><img :src="item.url" alt="" mode="aspectFill"></view>
                         </swiper-item>
                     </swiper>
                 </view>
@@ -22,7 +22,7 @@
             <view class="ml30">院校库</view>
             <view class="flex">
                 <view class="flex">
-                    <input type="text" placeholder="请输入学校">
+                    <input placeholder="请输入学校" type="text">
                     <text class="cuIcon-search"></text>
                 </view>
                 <button class="cu-btn bg-black lg">搜索</button>
@@ -34,7 +34,7 @@
             </view>
         </view>
         <view class="system">
-            <img src="../../static/image/icon/button.png" alt="">
+            <img alt="" src="../../static/image/icon/button.png">
             <text>调剂保录系统</text>
         </view>
         <view class="recommend m30 bg-red">
@@ -74,35 +74,37 @@
                 interval: 3000,
                 duration: 800,
                 circular: true,
-                swiperList: [{
-                    id: 0,
-                    type: 'image',
-                    url: 'https://ossweb-img.qq.com/images/lol/web201310/skin/big84000.jpg'
-                }, {
-                    id: 1,
-                    type: 'image',
-                    url: 'https://ossweb-img.qq.com/images/lol/web201310/skin/big84001.jpg',
-                }, {
-                    id: 2,
-                    type: 'image',
-                    url: 'https://ossweb-img.qq.com/images/lol/web201310/skin/big39000.jpg'
-                }, {
-                    id: 3,
-                    type: 'image',
-                    url: 'https://ossweb-img.qq.com/images/lol/web201310/skin/big10001.jpg'
-                }, {
-                    id: 4,
-                    type: 'image',
-                    url: 'https://ossweb-img.qq.com/images/lol/web201310/skin/big25011.jpg'
-                }, {
-                    id: 5,
-                    type: 'image',
-                    url: 'https://ossweb-img.qq.com/images/lol/web201310/skin/big21016.jpg'
-                }, {
-                    id: 6,
-                    type: 'image',
-                    url: 'https://ossweb-img.qq.com/images/lol/web201310/skin/big99008.jpg'
-                }],
+                swiperList: [
+                    {
+                        id: 0,
+                        type: 'image',
+                        url: 'https://ossweb-img.qq.com/images/lol/web201310/skin/big84000.jpg'
+                    }, {
+                        id: 1,
+                        type: 'image',
+                        url: 'https://ossweb-img.qq.com/images/lol/web201310/skin/big84001.jpg',
+                    }, {
+                        id: 2,
+                        type: 'image',
+                        url: 'https://ossweb-img.qq.com/images/lol/web201310/skin/big39000.jpg'
+                    }, {
+                        id: 3,
+                        type: 'image',
+                        url: 'https://ossweb-img.qq.com/images/lol/web201310/skin/big10001.jpg'
+                    }, {
+                        id: 4,
+                        type: 'image',
+                        url: 'https://ossweb-img.qq.com/images/lol/web201310/skin/big25011.jpg'
+                    }, {
+                        id: 5,
+                        type: 'image',
+                        url: 'https://ossweb-img.qq.com/images/lol/web201310/skin/big21016.jpg'
+                    }, {
+                        id: 6,
+                        type: 'image',
+                        url: 'https://ossweb-img.qq.com/images/lol/web201310/skin/big99008.jpg'
+                    }
+                ],
             };
         },
         onLoad() {
