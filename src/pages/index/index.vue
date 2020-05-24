@@ -152,7 +152,6 @@
 
 <style lang="scss" type="text/scss" scoped>
     .content {
-        padding-bottom: 50upx;
         .uni-padding-wrap {
             width: 100%;
             height: 350upx;
@@ -336,6 +335,9 @@
                 }
                 .tools-list{
                     background-color: #fff;
+                    navigator{
+                        margin-top: 0;
+                    }
                     &:after{
                         display: none;
                     }
