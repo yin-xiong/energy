@@ -1,6 +1,5 @@
 <template>
     <view class="userContent">
-        我的
         <view class="flex userContent-head">
             <view class="userContent-head-img"><img src="../../static/image/icon/tool.png" alt=""></view>
             <view>

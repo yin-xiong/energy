@@ -34,4 +34,8 @@
         color: #fff;
         border-radius: 10upx;
     }
+    .border{
+        border: 1px solid #000;
+        border-radius: 50%;
+    }
 </style>
