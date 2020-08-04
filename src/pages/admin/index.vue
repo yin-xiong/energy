@@ -1,14 +1,14 @@
 <template>
-    <view class="admin-content">
+    <view class="adminContent">
         <form @submit="formSubmit">
             <view class="admin-content-title">管理员入口</view>
             <view class="cu-form-group">
                 <view class="title">账号:</view>
-                <input type="text" placeholder="请输入账号"></input>
+                <input type="text" placeholder="请输入账号" />
             </view>
             <view class="cu-form-group">
                 <view class="title">密码:</view>
-                <input type="password" placeholder="请输入密码"></input>
+                <input type="password" placeholder="请输入密码" />
             </view>
             <view>
                 <view class="cu-form-group">
@@ -26,12 +26,14 @@
                 <button form-type="submit">提交</button>
             </view>
         </form>
+        <hans-tabber :isActive="isActive" />
     </view>
 </template>
 <script>
     export default {
         data() {
             return {
+                isActive:4,
                 index: 0,
                 array: ['校长/管理员', '教务老师', '咨询师', '市场人员','专业课老师','校园代理','代理'],
                 selectArr:[
@@ -45,6 +47,7 @@
                 ]
             }
         },
+        onShareAppMessage: function () {},
         methods: {
             bindPickerChange: function(e) {
                 console.log('picker发送选择改变，携带值为', e.target.value)
@@ -62,20 +65,20 @@
     }
 </script>
 <style lang="scss" type="text/scss" scoped>
-    .admin-content{
+    .adminContent{
         position: relative;
         width: 100vw;
         height: 100vh;
         background-color: #c9cace;
         form{
-            width: 80vw;
-            height: 55vh;
-            box-sizing: border-box;
-            padding: 0 30upx;
-            background-color: #c0d4f5;
             position: absolute;
             left: 50%;
             top: 50%;
+            width: 80vw;
+            height: 55vh;
+            box-sizing: border-box;
+            padding:0 30upx;
+            background-color: #c0d4f5;
             transform: translate(-50%,-50%);
             overflow: hidden;
             .admin-content-title{
@@ -85,7 +88,7 @@
                 font-weight: bold;
                 margin-top: 20upx;
             }
-            view,,input,.uni-btn-v,button{
+            view,input,.uni-btn-v,button{
                 background-color: transparent;
                 border: none;
             }
@@ -147,3 +150,4 @@
             }
         }
     }
+</style>

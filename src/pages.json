@@ -1,45 +1,248 @@
 {
-	"pages": [
-		{
-			"path": "pages/index/index",
-			"style": {
-				"navigationBarTitleText": "研能量"
-			}
-		},
-		{
-			"path": "pages/user/index",
-			"style": {
-				"navigationBarTitleText": "我的"
-			}
-		},
-		{
-			"path": "pages/admin/index",
-			"style": {
-				"navigationBarTitleText": "管理员入口"
-			}
-		}
-	],
-	"globalStyle": {
-		"navigationBarTextStyle": "white",
-		"navigationBarTitleText": "研能量",
-		"navigationBarBackgroundColor": "#000"
-	},
-	"tabBar": {
-		"color": "#333",
-		"selectedColor": "#4FAEF0",
-		"list": [
-			{
-				"pagePath": "pages/index/index",
-				"text": "研究生自荐"
-			},
-			{
-				"pagePath": "pages/user/index",
-				"text": "我 的"
-			},
-			{
-				"pagePath": "pages/admin/index",
-				"text": "管理员入口"
-			}
-		]
-	}
+  "pages": [
+
+    {
+      "path": "pages/index/index",
+      "style": {
+        "navigationBarTitleText": "壹研唯定"
+      }
+    },
+    {
+      "path": "pages/index/buy/index",
+      "style": {
+        "navigationBarTitleText": "壹研唯定"
+      }
+    },
+    {
+      "path": "pages/index/test/choseSchool",
+      "style": {
+        "navigationBarTitleText": "基础测评"
+      }
+    },
+    {
+      "path": "pages/index/test/details",
+      "style": {
+        "navigationBarTitleText": "测试详情"
+      }
+    },
+    {
+      "path": "pages/index/study/index",
+      "style": {
+        "navigationBarTitleText": "壹研唯定--学习充电站"
+      }
+    },
+    {
+      "path": "pages/index/searchDetail/details",
+      "style": {
+        "navigationBarTitleText": "专业详情"
+      }
+    },
+    {
+      "path": "pages/index/reference/index",
+      "style": {
+        "navigationBarTitleText": "参考资料"
+      }
+    },
+    {
+      "path": "pages/index/searchDetail/index",
+      "style": {
+        "navigationBarTitleText": "学校详情"
+      }
+    },
+    {
+      "path": "pages/index/toolbox/library",
+      "style": {
+        "navigationBarTitleText": "专业库"
+      }
+    },
+    {
+      "path": "pages/index/toolbox/library/index",
+      "style": {
+        "navigationBarTitleText": "专业详情"
+      }
+    },
+    {
+      "path": "pages/index/toolbox/plan",
+      "style": {
+        "navigationBarTitleText": "全程复习规划"
+      }
+    },
+    {
+      "path": "pages/index/toolbox/plan/index",
+      "style": {
+        "navigationBarTitleText": "规划详情"
+      }
+    },
+    {
+      "path": "pages/index/toolbox/questionbank",
+      "style": {
+        "navigationBarTitleText": "公共课真题",
+        "navigationBarBackgroundColor": "#F80",
+        "backgroundColorTop": "#F80"
+      }
+    },
+    {
+      "path": "pages/index/toolbox/questionbankdetails",
+      "style": {
+        "navigationBarTitleText": "公共课真题资料",
+        "navigationBarBackgroundColor": "#F80",
+        "backgroundColorTop": "#F80"
+      }
+    },
+    {
+      "path": "pages/index/toolbox/material",
+      "style": {
+        "navigationBarTitleText": "专业课资料"
+      }
+    },
+    {
+      "path": "pages/index/toolbox/markline",
+      "style": {
+        "navigationBarTitleText": "历年分数线",
+        "navigationBarBackgroundColor": "#1e00f9",
+        "backgroundColorTop": "#1e00f9"
+      }
+    },
+    {
+      "path": "pages/index/toolbox/markline/marklineImg",
+      "style": {
+        "navigationBarTitleText": "历年分数线详情"
+      }
+    },
+    {
+      "path": "pages/index/toolbox/commonsense",
+      "style": {
+        "navigationBarTitleText": "考研常识包"
+      }
+    },
+    {
+      "path": "pages/index/toolbox/box/box1",
+      "style": {
+        "navigationBarTitleText": "考试时间轴"
+      }
+    },
+    {
+      "path": "pages/index/toolbox/box/box2",
+      "style": {
+        "navigationBarTitleText": "专业院校选择"
+      }
+    },
+    {
+      "path": "pages/index/toolbox/box/box3",
+      "style": {
+        "navigationBarTitleText": "十三大学科分析"
+      }
+    },
+    {
+      "path": "pages/index/toolbox/schoolSelection/index",
+      "style": {
+        "navigationBarTitleText": "专业院校选择"
+      }
+    },
+    {
+      "path": "pages/index/toolbox/subjectAnalysis/index",
+      "style": {
+        "navigationBarTitleText": "十三大门类学科"
+      }
+    },
+    {
+      "path": "pages/recommend/index",
+      "style": {
+        "navigationBarTitleText": "研究生自荐"
+      }
+    },
+    {
+      "path": "pages/index/searchfor/index",
+      "style": {
+        "navigationBarTitleText": "壹研唯定"
+      }
+    },
+    {
+      "path": "pages/index/searchfor/direction/index",
+      "style": {
+        "navigationBarTitleText": "学校列表"
+      }
+    },
+    {
+      "path": "pages/index/searchfor/professional/index",
+      "style": {
+        "navigationBarTitleText": "专业详情"
+      }
+    },
+    {
+      "path": "pages/index/adjust/applytable",
+      "style": {
+        "navigationBarTitleText": "调剂申请表"
+      }
+    },
+    {
+      "path": "pages/index/adjust/index",
+      "style": {
+        "navigationBarTitleText": "调剂保录系统"
+      }
+    },
+    {
+      "path": "pages/index/adjust/list",
+      "style": {
+        "navigationBarTitleText": "调剂保录系统列表"
+      }
+    },
+    {
+      "path": "pages/index/search/index",
+      "style": {
+        "navigationBarTitleText": "搜索",
+        "enablePullDownRefresh": true,
+        "backgroundTextStyle": "dark"
+      }
+    },
+    {
+      "path": "pages/user/index",
+      "style": {
+        "navigationBarTitleText": "我的"
+      }
+    },
+    {
+      "path": "pages/admin/index",
+      "style": {
+        "navigationBarTitleText": "管理员入口"
+      }
+    },
+    {
+      "path": "pages/components/webview/webview",
+      "style": {
+        "navigationBarTitleText": "壹研唯定"
+      }
+    }
+  ],
+  "globalStyle": {
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "壹研唯定",
+    "navigationBarBackgroundColor": "#1AD3CD"
+  },
+  "tabBar": {
+    "color": "#262626",
+    "selectedColor": "#1AD3CD",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首 页",
+        "iconPath": "static/image/icon/tab/home.png",
+        "selectedIconPath": "static/image/icon/tab/home1.png"
+      },
+      {
+        "pagePath": "pages/recommend/index",
+        "text": "研究生自荐",
+        "iconPath": "static/image/icon/tab/admin.png",
+        "selectedIconPath": "static/image/icon/tab/admin1.png"
+      },
+      {
+        "pagePath": "pages/user/index",
+        "text": "我 的",
+        "iconPath": "static/image/icon/tab/me.png",
+        "selectedIconPath": "static/image/icon/tab/me1.png"
+      }
+    ]
+  }
 }

@@ -1,20 +1,29 @@
 <script>
 	export default {
-		onLaunch: function() {
-			console.log('App Launch')
+		async onShow (){
+            console.log(1);
+            if(uni.getStorageSync('openid')){
+                let data = {userId : uni.getStorageSync('openid')},
+                    resp = await this.$api.selectUser(data);
+                console.log(resp.result.phone);
+                uni.setStorage({key: 'isVip', data: resp.result.isVip});
+                uni.setStorage({key: 'userNo', data: resp.result.userNo});
+                if(!resp.result.phone){
+                    uni.switchTab({
+                        url:'/pages/index/index'
+                    })
+                }
+            }
 		},
-		onShow: function() {
-			console.log('App Show')
-		},
-		onHide: function() {
-			console.log('App Hide')
-		}
 	}
 </script>
 
 <style>
     @import "../colorui/main.css";
     @import "../colorui/icon.css";
+    .body{
+        padding-bottom: 120upx;
+    }
     .flex{
         display: flex;
     }
@@ -37,5 +46,8 @@
     .border{
         border: 1px solid #000;
         border-radius: 50%;
+    }
+    swiper-item{
+        overflow-y: scroll;
     }
 </style>
